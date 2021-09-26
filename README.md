@@ -46,14 +46,14 @@
 
 3 Таблицы:
 
-* create table user(
-* Id long auto_increment,
-* First_Name varchar(30),
-* Second_Name varchar(30),
-* Last_Name varchar(30),
-* Date_Of_Birth date,
-* primary key (Id)
-* );
+create table user(<br>
+Id long auto_increment,<br>
+First_Name varchar(30),<br>
+Second_Name varchar(30),
+Last_Name varchar(30),
+Date_Of_Birth date,
+primary key (Id)
+);
 
 
 create table seller(
