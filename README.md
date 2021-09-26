@@ -8,8 +8,10 @@
 Валидация контрольной суммы инн и возраста осуществляется через созданые аннотации.
 Из условия, что инн есть только у юр. лица, поле faceItem имеет два значения PhisFace и IndivFace. При изменении на PhisFace, поле itn становиться равным 0.  
 
-Входные данные
+Входные данные 
+
 Корректные:
+
 {"sellerId":{"userId":{"dateOfBirth":"1955-12-16",
 "firstName":"Danil",
 "lastName":"Alekseevich",
@@ -26,6 +28,7 @@
 "totalPurchaseValue":4000}
 
 Неправильный инн:
+
 {"sellerId":{"userId":{"dateOfBirth":"1955-12-16",
 "firstName":"Danil",
 "lastName":"Alekseevich",
