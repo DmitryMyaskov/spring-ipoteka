@@ -49,32 +49,32 @@
 create table user(<br>
 Id long auto_increment,<br>
 First_Name varchar(30),<br>
-Second_Name varchar(30),
-Last_Name varchar(30),
-Date_Of_Birth date,
-primary key (Id)
-);
+Second_Name varchar(30),<br>
+Last_Name varchar(30),<br>
+Date_Of_Birth date,<br>
+primary key (Id)<br>
+);<br>
 
 
-create table seller(
-Id long auto_increment,
-User_Id long,
-Face_Item varchar(30),
-ITN long,
+create table seller(<br>
+Id long auto_increment,<br>
+User_Id long,<br>
+Face_Item varchar(30),<br>
+ITN long,<br>
 
-primary key (Id),
-foreign key (User_Id) references user(Id)
-);
+primary key (Id),<br>
+foreign key (User_Id) references user(Id)<br>
+);<br>
 
-create table customer(
-Id long auto_increment,
-User_Id long,
-Credit_Amount varchar(30),
-Credit_Term int,
-Mortgage_Object varchar(30),
-Total_Purchase_Value int,
-Seller_Id long,
-primary key (Id),
-foreign key (Seller_Id) references seller(Id),
-foreign key (User_Id) references user(Id)
-);
+create table customer(<br>
+Id long auto_increment,<br>
+User_Id long,<br>
+Credit_Amount varchar(30),<br>
+Credit_Term int,<br>
+Mortgage_Object varchar(30),<br>
+Total_Purchase_Value int,<br>
+Seller_Id long,<br>
+primary key (Id),<br>
+foreign key (Seller_Id) references seller(Id),<br>
+foreign key (User_Id) references user(Id)<br>
+);<br>
