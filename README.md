@@ -2,9 +2,9 @@
 Микросервис на Spring по подаче заявки на предоставление ипотеки. 
 База данных H2.
 В контроллере есть 3 запроса: 
-   1.Получение всех заявок http://localhost:8080/spring_war/customers 
-   2.Получение заявки по id http://localhost:8080/spring_war/customer/{id}
-   3.Создание заявки, передача параметров осуществляется в json формате через Postman  http://localhost:8080/spring_war/customer 
+1. Получение всех заявок http://localhost:8080/spring_war/customers 
+2. Получение заявки по id http://localhost:8080/spring_war/customer/{id}
+3. Создание заявки, передача параметров осуществляется в json формате через Postman  http://localhost:8080/spring_war/customer 
 Валидация контрольной суммы инн и возраста осуществляется через созданые аннотации.
 Из условия, что инн есть только у юр. лица, поле faceItem имеет два значения PhisFace и IndivFace. При изменении на PhisFace, поле itn становиться равным 0.  
 
