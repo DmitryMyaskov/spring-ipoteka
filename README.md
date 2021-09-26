@@ -1,7 +1,7 @@
 # spring-ipoteka
 Микросервис на Spring по подаче заявки на предоставление ипотеки. 
-База данных H2.
-В контроллере есть 3 запроса: 
+База данных H2.<br>
+В контроллере есть 3 запроса: <br>
 1. Получение всех заявок:     http://localhost:8080/spring_war/customers 
 2. Получение заявки по id:    http://localhost:8080/spring_war/customer/{id}
 3. Создание заявки, передача параметров осуществляется в json формате через Postman:   http://localhost:8080/spring_war/customer<br>
