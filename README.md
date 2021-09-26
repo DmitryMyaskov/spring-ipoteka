@@ -61,7 +61,6 @@ Id long auto_increment,<br>
 User_Id long,<br>
 Face_Item varchar(30),<br>
 ITN long,<br>
-
 primary key (Id),<br>
 foreign key (User_Id) references user(Id)<br>
 );<br>
